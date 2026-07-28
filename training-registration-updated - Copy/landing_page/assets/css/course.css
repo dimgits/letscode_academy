@@ -1,0 +1,120 @@
+/* =========================================================
+   COURSE DETAIL PAGE
+   Uses the same design tokens/components as style.css
+   (badge-purple, feature-card, section-tag, btn-purple, etc.)
+========================================================= */
+
+.course-hero{
+    padding:clamp(120px,16vh,160px) 0 60px;
+    position:relative;
+}
+
+.course-back-link{
+    display:inline-flex !important;
+    align-items:center;
+    gap:8px;
+    color:#ffffff !important;
+    text-decoration:none !important;
+    font-size:14px;
+    font-weight:500;
+    margin-bottom:40px;
+}
+
+.course-back-link:hover{
+    color:var(--accent) !important;
+}
+
+.course-hero-title{
+    font-size:clamp(28px,4.2vw,46px);
+    font-weight:700;
+    line-height:1.2;
+    color:white;
+    margin:18px 0 18px;
+}
+
+.course-hero-desc{
+    color:var(--gray);
+    font-size:15.5px;
+    line-height:1.8;
+    max-width:560px;
+    margin-bottom:24px;
+}
+
+.course-tag-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.course-tag{
+    display:inline-block;
+    padding:8px 16px;
+    background:rgba(139,92,246,.1);
+    border:1px solid rgba(139,92,246,.3);
+    border-radius:50px;
+    color:#d6d2ea;
+    font-size:13px;
+    font-weight:500;
+}
+
+.course-hero-icon{
+    width:220px;
+    height:220px;
+    margin:0 auto;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:radial-gradient(circle at 35% 30%, rgba(139,92,246,.35), rgba(124,58,237,.08) 70%);
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 0 80px rgba(139,92,246,.35);
+}
+
+.course-hero-icon i{
+    font-size:90px;
+    background:linear-gradient(135deg,#C084FC,#8B5CF6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.course-benefits{
+    position:relative;
+}
+
+.course-cta{
+    padding:20px 0 100px;
+}
+
+.course-cta-box{
+    background:linear-gradient(135deg, rgba(139,92,246,.16), rgba(124,58,237,.06));
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:28px;
+    padding:clamp(40px,6vh,64px) clamp(24px,5vw,60px);
+    text-align:center;
+}
+
+.course-cta-box h2{
+    font-size:clamp(22px,3vw,32px);
+    font-weight:700;
+    color:white;
+    margin-bottom:12px;
+}
+
+.course-cta-box p{
+    color:var(--gray);
+    font-size:15px;
+    margin-bottom:26px;
+}
+
+@media (max-width:991px){
+
+    .course-hero-icon{
+        margin-top:30px;
+        width:180px;
+        height:180px;
+    }
+
+    .course-hero-icon i{
+        font-size:72px;
+    }
+}

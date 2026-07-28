@@ -1,0 +1,1076 @@
+/* =========================================================
+   LETSCODE! RESPONSIVE.CSS
+   Comprehensive mobile-responsive overrides for all landing
+   page breakpoints (landing_page/index.php and course.php).
+   v2 - Complete mobile-friendly rewrite
+========================================================= */
+
+/* =========================================================
+   LARGE TABLETS / SMALL DESKTOPS (max 1199px)
+========================================================= */
+@media (max-width: 1199px) {
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* =========================================================
+   TABLETS (max 991px)
+========================================================= */
+@media (max-width: 991px) {
+
+    /* ---- General ---- */
+    section {
+        padding: 70px 0;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .section-text {
+        font-size: 14px;
+    }
+
+    /* ---- Hero ---- */
+    .hero {
+        min-height: auto;
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        justify-content: center;
+    }
+
+    /* Hero image - fix for actual <img> tag used instead of .hero-visual */
+    .hero-image {
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+        border: 1px solid rgba(255,255,255,.08);
+        box-shadow: 0 25px 70px rgba(0,0,0,.45);
+    }
+
+    .hero-image::before {
+        width: 400px;
+        height: 400px;
+    }
+
+    .floating-card {
+        left: 10px;
+        bottom: 10px;
+        padding: 14px 18px;
+        font-size: 13px;
+    }
+
+    /* ---- Trusted ---- */
+    .trusted {
+        padding: 50px 0;
+    }
+
+    .company {
+        width: 150px;
+        height: 70px;
+    }
+
+    .company img {
+        height: 45px;
+    }
+
+    /* ---- About ---- */
+    .about-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .experience-card {
+        right: 20px;
+        bottom: 20px;
+        width: 160px;
+        padding: 18px;
+    }
+
+    .experience-card h2 {
+        font-size: 40px;
+    }
+
+    .experience-card p {
+        font-size: 13px;
+    }
+
+    /* ---- Navbar mobile improvements ---- */
+    .glass-nav .navbar-collapse {
+        background: rgba(12, 7, 25, 0.98);
+        border-radius: 0 0 20px 20px;
+        padding: 16px 20px 24px;
+        margin-top: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(18px);
+    }
+
+    .glass-nav .navbar-nav {
+        gap: 4px;
+    }
+
+    .glass-nav .nav-item {
+        margin-left: 0 !important;
+    }
+
+    .glass-nav .dropdown-menu {
+        background: rgba(20, 12, 40, 0.95) !important;
+        border: 1px solid rgba(192, 132, 252, 0.2) !important;
+        margin-left: 10px;
+        margin-top: 4px;
+        min-width: 200px;
+    }
+
+    .glass-nav .nav-item.ms-lg-3,
+    .glass-nav .nav-item.ms-lg-4 {
+        margin-left: 0 !important;
+        margin-top: 8px;
+    }
+
+    .glass-nav .btn-purple {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-profile-btn {
+        width: 100%;
+        border-radius: 50px;
+        padding: 12px 20px;
+        justify-content: center;
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    .nav-profile-btn::after {
+        content: " Student Login";
+    }
+
+    /* ---- Carousel fix for mobile ---- */
+    .carousel-wrapper {
+        padding: 0 20px;
+        overflow: hidden;
+    }
+
+    .carousel-wrapper .carousel-btn.prev {
+        left: -12px;
+        width: 42px;
+        height: 42px;
+        font-size: 14px;
+    }
+
+    .carousel-wrapper .carousel-btn.next {
+        right: -12px;
+        width: 42px;
+        height: 42px;
+        font-size: 14px;
+    }
+
+    .carousel-track {
+        padding: 20px 0;
+        gap: 24px;
+    }
+
+    /* ---- Course cards ---- */
+    .course-card {
+        padding: 28px;
+    }
+
+    .course-card h4 {
+        font-size: 22px;
+    }
+
+    .course-icon {
+        width: 68px;
+        height: 68px;
+        font-size: 28px;
+    }
+
+    /* ---- Why / Features ---- */
+    .feature-card {
+        padding: 30px 24px;
+    }
+
+    .feature-card h4 {
+        font-size: 20px;
+    }
+
+    .feature-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+    }
+
+    /* ---- Process Cards ---- */
+    .process-card {
+        padding: 30px 20px;
+    }
+
+    .process .row > .col-md-3 {
+        flex: 0 0 calc(50% - 15px);
+        max-width: calc(50% - 15px);
+    }
+
+    /* ---- CTA ---- */
+    .cta-box {
+        padding: 50px 30px;
+    }
+
+    .cta-box h2 {
+        font-size: 28px;
+    }
+
+    /* ---- Footer ---- */
+    .footer {
+        padding: 50px 0 20px;
+    }
+
+    .footer .col-lg-2,
+    .footer .col-lg-3,
+    .footer .col-lg-4 {
+        margin-bottom: 30px;
+    }
+
+    .footer h3 {
+        font-size: 22px;
+    }
+
+    .footer .socials {
+        margin-top: 10px;
+    }
+
+    /* ---- Stats section ---- */
+    .stats .col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .stat-card {
+        padding: 22px 16px;
+    }
+
+    .stat-card h2 {
+        font-size: 30px;
+    }
+
+    /* ---- Testimonials ---- */
+    .testimonial-card {
+        padding: 30px 24px;
+    }
+
+    .testimonial-card h5 {
+        font-size: 20px;
+    }
+
+    .testimonial-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    /* ---- Course detail page ---- */
+    .course-hero {
+        padding: 100px 0 40px;
+    }
+
+    .course-hero .row {
+        flex-direction: column-reverse;
+    }
+
+    .course-hero .col-lg-7 {
+        text-align: center;
+    }
+
+    .course-hero-desc {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .course-tag-list {
+        justify-content: center;
+    }
+
+    .course-back-link {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .course-hero-icon {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 20px;
+    }
+
+    .course-hero-icon i {
+        font-size: 64px;
+    }
+
+    .course-benefits .col-lg-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* =========================================================
+   MOBILE (max 767px)
+========================================================= */
+@media (max-width: 767px) {
+
+    /* ---- General ---- */
+    section {
+        padding: 50px 0;
+    }
+
+    /* ---- Hero ---- */
+    .hero {
+        padding-top: 90px;
+        padding-bottom: 40px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .badge-purple {
+        font-size: 12px;
+        padding: 7px 14px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons .btn {
+        font-size: 14px;
+        padding: 12px 24px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-stats {
+        gap: 20px;
+    }
+
+    .hero-stats h3 {
+        font-size: 26px;
+    }
+
+    .hero-stats span {
+        font-size: 13px;
+    }
+
+    /* Hide hero image on very small screens to prioritize text */
+    .hero-image img {
+        max-height: 280px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .hero-image::before {
+        width: 300px;
+        height: 300px;
+    }
+
+    .floating-card {
+        left: 10px;
+        bottom: 10px;
+        padding: 10px 14px;
+        font-size: 11px;
+    }
+
+    /* ---- Section titles ---- */
+    .section-title {
+        font-size: 26px;
+    }
+
+    .section-tag {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+
+    /* ---- About ---- */
+    .about-image img {
+        border-radius: 22px;
+    }
+
+    .about .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .experience-card {
+        width: 140px;
+        padding: 14px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .experience-card h2 {
+        font-size: 32px;
+    }
+
+    .experience-card p {
+        font-size: 12px;
+    }
+
+    /* ---- Courses ---- */
+    .course-card {
+        padding: 24px 22px;
+    }
+
+    .course-card h4 {
+        font-size: 20px;
+    }
+
+    .course-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .course-card ul li {
+        font-size: 13px;
+    }
+
+    .course-badge {
+        font-size: 10px;
+        padding: 5px 10px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .learn-btn {
+        font-size: 14px;
+    }
+
+    /* ---- Why / Features ---- */
+    .feature-card {
+        padding: 24px 20px;
+    }
+
+    .feature-card h4 {
+        font-size: 18px;
+    }
+
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 26px;
+        margin-bottom: 18px;
+    }
+
+    .feature-card p {
+        font-size: 13px;
+    }
+
+    /* ---- Process ---- */
+    .process .row > .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .process-card {
+        padding: 28px 20px;
+    }
+
+    .process-card i {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        margin-bottom: 18px;
+        margin-top: 10px;
+    }
+
+    .process-number {
+        width: 42px;
+        height: 42px;
+        font-size: 14px;
+        top: -20px;
+    }
+
+    .process-card h4 {
+        font-size: 18px;
+    }
+
+    .process-card p {
+        font-size: 13px;
+    }
+
+    /* ---- Stats ---- */
+    .stats .col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .stat-card {
+        padding: 20px 14px;
+    }
+
+    .stat-card h2 {
+        font-size: 28px;
+    }
+
+    .stat-card p {
+        font-size: 13px;
+    }
+
+    /* ---- Testimonials ---- */
+    .testimonial-card {
+        padding: 24px 20px;
+    }
+
+    .testimonial-card h5 {
+        font-size: 18px;
+    }
+
+    .testimonial-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .testimonial-card span {
+        font-size: 13px;
+    }
+
+    .stars {
+        font-size: 16px;
+    }
+
+    .testimonial-card p {
+        font-size: 13px;
+    }
+
+    /* ---- FAQ ---- */
+    .accordion-button {
+        padding: 18px 20px;
+        font-size: 14px;
+    }
+
+    .accordion-body {
+        padding: 16px 20px;
+        font-size: 13px;
+    }
+
+    /* ---- CTA ---- */
+    .cta-box {
+        padding: 40px 24px;
+        border-radius: 20px;
+    }
+
+    .cta-box h2 {
+        font-size: 24px;
+    }
+
+    .cta-box p {
+        font-size: 14px;
+    }
+
+    .cta-box .btn {
+        width: 100%;
+    }
+
+    /* ---- Footer ---- */
+    .footer {
+        padding: 40px 0 20px;
+    }
+
+    .footer h5 {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    .footer ul li a {
+        font-size: 13px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+
+    .footer .socials a {
+        width: 34px;
+        height: 34px;
+        font-size: 13px;
+    }
+
+    .footer .text-center {
+        font-size: 12px;
+    }
+
+    /* ---- Navbar ---- */
+    .glass-nav {
+        padding: 12px 0;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    /* ---- Background Blobs - hide on mobile for performance ---- */
+    .blur1,
+    .blur2,
+    .blur3 {
+        display: none;
+    }
+
+    /* ---- Mini Cards (about) ---- */
+    .mini-card {
+        padding: 18px;
+    }
+
+    .mini-card i {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+        border-radius: 14px;
+    }
+
+    .mini-card h5 {
+        font-size: 14px;
+    }
+
+    .mini-card p {
+        font-size: 12px;
+    }
+
+    /* ---- Trusted ---- */
+    .trusted {
+        padding: 40px 0;
+    }
+
+    .trusted p {
+        font-size: 13px;
+        margin-bottom: 24px;
+    }
+
+    .company {
+        width: 130px;
+        height: 60px;
+    }
+
+    .company img {
+        height: 36px;
+    }
+
+    .company-logos {
+        gap: 16px;
+    }
+
+    /* ---- Carousel fixes for mobile ---- */
+    .carousel-wrapper {
+        padding: 0 10px;
+    }
+
+    .carousel-wrapper .carousel-btn.prev,
+    .carousel-wrapper .carousel-btn.next {
+        display: none;
+    }
+
+    .carousel-track {
+        gap: 16px;
+        padding: 10px 0;
+    }
+
+    .carousel-track > [class*='col-'] {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    /* Disable fancy carousel effects on mobile */
+    .carousel-track > [class*='col-'].carousel-item-dim,
+    .carousel-track > [class*='col-'].carousel-item-hidden {
+        opacity: 1;
+        transform: none;
+        filter: none;
+        pointer-events: auto;
+    }
+
+    .carousel-track > [class*='col-'].carousel-item-active {
+        transform: none;
+    }
+
+    .carousel-track > [class*='col-'].carousel-item-active .feature-card,
+    .carousel-track > [class*='col-'].carousel-item-active .course-card {
+        border-color: initial;
+        box-shadow: none;
+    }
+
+    /* Reset track transform on mobile - show all items stacked */
+    .carousel-track {
+        transform: none !important;
+    }
+
+    /* Disable hover effects on mobile */
+    .course-card:hover,
+    .feature-card:hover,
+    .process-card:hover,
+    .testimonial-card:hover,
+    .stat-card:hover,
+    .mini-card:hover,
+    .company:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+
+    .course-card:hover::before,
+    .course-card:hover::after,
+    .feature-card:hover::before {
+        opacity: 0 !important;
+    }
+
+    .course-card:hover .course-icon,
+    .feature-card:hover .feature-icon,
+    .process-card:hover i {
+        transform: none !important;
+        box-shadow: initial !important;
+    }
+
+    .course-card:hover h4 {
+        background: none;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
+    }
+
+    .testimonial-card:hover .testimonial-img {
+        transform: none;
+        border-color: initial;
+        box-shadow: none;
+    }
+
+    .company:hover img {
+        opacity: .85;
+    }
+
+    /* ---- Course detail page ---- */
+    .course-hero {
+        padding: 90px 0 30px;
+    }
+
+    .course-hero-title {
+        font-size: 24px;
+    }
+
+    .course-hero-desc {
+        font-size: 14px;
+    }
+
+    .course-tag {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+
+    .course-hero-icon {
+        width: 130px;
+        height: 130px;
+    }
+
+    .course-hero-icon i {
+        font-size: 52px;
+    }
+
+    .course-benefits .col-lg-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .course-cta-box {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .course-cta-box h2 {
+        font-size: 20px;
+    }
+
+    .course-cta-box p {
+        font-size: 14px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE (max 480px)
+========================================================= */
+@media (max-width: 480px) {
+
+    /* ---- Hero ---- */
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero-image img {
+        max-height: 220px;
+    }
+
+    .floating-card {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+
+    .floating-card i {
+        font-size: 12px;
+    }
+
+    /* ---- Section Titles ---- */
+    .section-title {
+        font-size: 22px;
+    }
+
+    .section-tag {
+        font-size: 11px;
+        padding: 5px 12px;
+    }
+
+    /* ---- Course Cards ---- */
+    .course-card {
+        padding: 20px 18px;
+    }
+
+    .course-card h4 {
+        font-size: 18px;
+    }
+
+    .course-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .course-card ul {
+        margin-bottom: 20px;
+    }
+
+    .course-card ul li {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    /* ---- Feature Cards ---- */
+    .feature-card {
+        padding: 20px 16px;
+    }
+
+    .feature-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 22px;
+    }
+
+    /* ---- Stats ---- */
+    .stats .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .stat-card {
+        padding: 16px 12px;
+    }
+
+    .stat-card h2 {
+        font-size: 24px;
+    }
+
+    /* ---- Process ---- */
+    .process-card {
+        padding: 22px 16px;
+    }
+
+    .process-card i {
+        width: 60px;
+        height: 60px;
+        font-size: 26px;
+    }
+
+    /* ---- Logo ---- */
+    .logo {
+        font-size: 20px;
+    }
+
+    .logo i {
+        font-size: 18px;
+    }
+
+    /* ---- Trusted ---- */
+    .company {
+        width: 110px;
+        height: 52px;
+    }
+
+    .company img {
+        height: 30px;
+    }
+
+    .company-logos {
+        gap: 12px;
+    }
+
+    /* ---- CTA ---- */
+    .cta-box {
+        padding: 30px 18px;
+    }
+
+    .cta-box h2 {
+        font-size: 20px;
+    }
+
+    /* ---- Experience Card ---- */
+    .experience-card {
+        width: 120px;
+        padding: 12px;
+        right: 6px;
+        bottom: 6px;
+    }
+
+    .experience-card h2 {
+        font-size: 28px;
+    }
+
+    .experience-card p {
+        font-size: 11px;
+    }
+
+    /* ---- Footer ---- */
+    .footer h5 {
+        font-size: 13px;
+    }
+
+    .footer .socials {
+        justify-content: center;
+    }
+
+    .footer .col-lg-4,
+    .footer .col-lg-2,
+    .footer .col-lg-3 {
+        text-align: center;
+    }
+
+    .footer .col-lg-4 h3 {
+        justify-content: center;
+    }
+
+    .footer .socials {
+        justify-content: center;
+    }
+
+    /* ---- Course detail page ---- */
+    .course-hero-title {
+        font-size: 22px;
+    }
+
+    .course-hero-icon {
+        width: 110px;
+        height: 110px;
+        margin-bottom: 16px;
+    }
+
+    .course-hero-icon i {
+        font-size: 44px;
+    }
+
+    .course-cta-box {
+        padding: 24px 16px;
+    }
+
+    .course-cta-box h2 {
+        font-size: 18px;
+    }
+
+    .course-tag {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .course-hero .btn {
+        width: 100%;
+    }
+
+    /* ---- About section mobile fixes ---- */
+    .about {
+        text-align: center;
+    }
+
+    .about .section-title {
+        text-align: center;
+    }
+
+    .about .section-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mini-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 16px;
+    }
+
+    .mini-card i {
+        margin-bottom: 8px;
+    }
+
+    /* ---- FAQ mobile ---- */
+    .faq .accordion {
+        padding: 0 4px;
+    }
+
+    .accordion-button {
+        padding: 14px 16px;
+        font-size: 13px;
+    }
+
+    .accordion-body {
+        padding: 12px 16px;
+        font-size: 12px;
+    }
+
+    .accordion-item {
+        margin-bottom: 12px;
+    }
+}
